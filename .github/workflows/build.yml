@@ -117,8 +117,8 @@ jobs:
           minikube service list
           SERVICE_URL=$(minikube service spring-rag --url)
           echo "${SERVICE_URL}/samples/EFREI"
-          echo "------------------opening the service------------------"
-          sleep 40
+#          echo "------------------opening the service------------------"
+#          sleep 40
       - name: Test Kubernetes service URL
         uses: nick-fields/retry@v2
         with:
